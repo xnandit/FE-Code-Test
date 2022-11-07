@@ -1,0 +1,68 @@
+<div class="navbar navbar-white bg-white box-shadow">
+    <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <h2 style="color:black"><strong>Coding Gembira</strong></h2>
+        </a>
+        <a href="#" style="text-decoration:none; font-size: 1.5em; color:grey; border-bottom: 4px solid rgb(8, 104, 212); padding-bottom:0px !important;" class="p-2 link-secondary">Post</a>
+        <h2 style="color:black"><strong>Welcome, <a href="" [routerLink]="['/profile']">{{user.username}}</a></strong></h2>
+    </div>
+</div>
+<main role="main" class="container" >
+    <div class="px-4 my-5 ">
+        
+        <div class="col-lg-6 mx-auto">
+            <a href="" [routerLink]="['/post']"><span class="fa fa-arrow-left " style="left: 0px;"></span></a>
+        </div>
+        
+    </div>
+    <div class="col-lg-6 mx-auto">
+        <div class="row">
+            <div class="col-lg-3 text-center" >
+                <!-- Username : -->
+            </div>
+            <div class="col-lg-3" style="text-align: justify;">
+                Username :
+            </div>
+            <div class="col-lg-6" style="text-align: justify;">
+                {{user?.username}}
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-lg-3 text-center" >
+                <!-- Username : -->
+            </div>
+            <div class="col-lg-3" style="text-align: justify;">
+                Email :
+            </div>
+            <div class="col-lg-6" style="text-align: justify;">
+                {{user?.email}}
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-lg-3 text-center" >
+                <!-- Username : -->
+            </div>
+            <div class="col-lg-3" style="text-align: justify;">
+                Address :
+            </div>
+            <div class="col-lg-6" style="text-align: justify;">
+                {{user?.address?.street}}
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-lg-3 text-center" >
+                <!-- Username : -->
+            </div>
+            <div class="col-lg-3" style="text-align: justify;">
+                Phone :
+            </div>
+            <div class="col-lg-6" style="text-align: justify;">
+                {{user?.phone}}
+            </div>
+        </div>
+        
+        <br>
+    </div>
+    
+    
+</main>
